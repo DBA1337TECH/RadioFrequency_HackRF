@@ -91,11 +91,16 @@ below are the commands to use png_to_waterfall_sim.py which is the simulation co
 
 ```
 # Full image simulation centered at 915 MHz with 2 MHz bandwidth
-python3 png_to_waterfall_sim.py nick_cage.png --out-iq cage.cs8 --out-waterfall preview.png -s 2e6 --fft-size 1024 --col-time 0.01 --center-freq 915e6
+python3 png_to_waterfall_sim.py nick_cage_2.png --out-iq nick_normal.cs8 --out-waterfall preview_normal_35Mhz_copy.png -s 10000000.0 --fft-size 1024 --col-time 0.01 --center-freq 35000000.0 --mode full --sim-time 9.44
+```
+## Output of full image simulation
 
+![conair jammer](./preview_normal_35MHz.png)
+
+```
 # Preview only the first 2 seconds
 python3 png_to_waterfall_sim.py nick_cage.png --out-iq cage.cs8 --out-waterfall preview2s.png -s 2e6 --fft-size 1024 --col-time 0.01 --center-freq 915e6 --sim-time 2
-
+```
 
 
 ---
